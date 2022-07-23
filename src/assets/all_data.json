@@ -1,0 +1,62 @@
+[
+{
+"date":"1 Feb",
+"Actual_Production":60890,
+"Good_Production":58508,
+"Oee":82,
+"Avilbility":87,
+"Downtime":80,
+"Scrap_Qty_prc":1.5,
+"Scrap_Value_in":87
+},
+{
+"date":"2 Feb",
+"Actual_Production":62110,
+"Good_Production":18264,
+"Oee":82,
+"Avilbility":85,
+"Downtime":74,
+"Scrap_Qty_prc":1.4,
+"Scrap_Value_in":30
+},
+{
+"date":"3 Feb",
+"Actual_Production":71202,
+"Good_Production":19878,
+"Oee":84,
+"Avilbility":88,
+"Downtime":81,
+"Scrap_Qty_prc":1.7,
+"Scrap_Value_in":69
+},
+{
+"date":"4 Feb",
+"Actual_Production":65872,
+"Good_Production":20366,
+"Oee":81,
+"Avilbility":86,
+"Downtime":83,
+"Scrap_Qty_prc":1.5,
+"Scrap_Value_in":69
+},
+{
+"date":"5 Feb",
+"Actual_Production":25872,
+"Good_Production":2066,
+"Oee":41,
+"Avilbility":66,
+"Downtime":23,
+"Scrap_Qty_prc":3.9,
+"Scrap_Value_in":97
+},
+{
+"date":"5 Feb",
+"Actual_Production":25272,
+"Good_Production":56066,
+"Oee":61,
+"Avilbility":96,
+"Downtime":93,
+"Scrap_Qty_prc":1.2,
+"Scrap_Value_in":39
+}
+]

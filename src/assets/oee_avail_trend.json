@@ -1,0 +1,27 @@
+[
+	{
+    	"REGION": "12 Months Avrage",
+    	"OEE": "188",
+    	"Availability": "235"
+    },
+	{
+    	"REGION": "3 Months Avrage",
+    	"OEE": "367",
+    	"Availability": "414"
+    },
+    {
+    	"REGION": "Jan 22",
+    	"OEE": "519",
+    	"Availability": "566"
+    },
+	{
+    	"REGION": "CW 5",
+    	"OEE": "650",
+    	"Availability": "697"
+	},
+	{
+    	"REGION": "17-2-2022",
+    	"OEE": "774",
+    	"Availability": "821"
+    }
+]

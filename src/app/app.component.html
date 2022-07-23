@@ -1,0 +1,133 @@
+<div id="my_shit">
+
+
+
+
+
+<nav class="navbar navbar-dark bg-danger sticky-top">
+	<div class="container-fluid m-0">
+		<a class="navbar-brand h1 p-0 m-0">FAS</a>
+		
+			<button class="btn btn-sm btn-dark" (click)="convetToPDF();">Export</button>
+		
+	</div>
+</nav>
+
+
+
+<main class="container-fluid m-0 p-0">
+
+	<div class="row m-0 p-0 my-2">
+		<div class="col-sm-4 m-0 p-0" align="center">
+			Plant : {{plant_name}}
+		</div>
+		<div class="col-sm-4 m-0 p-0" align="center">
+			Date : {{current_date}}
+		</div>
+		<div class="col-sm-4 m-0 p-0" align="center">
+			Shift: All
+		</div>
+	</div>
+
+	<div class="row m-0 p-0 my-5">
+		<h1 class="display-6" align="center">{{title}}</h1>
+	</div>
+
+</main>
+
+
+
+<section class="container-fluid m-0 p-0 px-5">
+	<table class="table table-danger table-striped table-hover table-borderless table-responsive">
+		<thead class="table-dark">
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Act Prod</th>
+				<th scope="col">Good Prod</th>
+				<th scope="col">OEE</th>
+				<th scope="col">Avail</th>
+				<th scope="col">Down</th>
+				<th scope="col">Scrap %</th>
+				<th scope="col">Scrap Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of all_data">
+				<th>{{item.date}}</th>
+				<td>{{item.Actual_Production}}</td>
+				<td>{{item.Good_Production}}</td>
+				<td>{{item.Oee}}</td>
+				<td>{{item.Avilbility}}</td>
+				<td>{{item.Downtime}}</td>
+				<td>{{item.Scrap_Qty_prc}}</td>
+				<td>{{item.Scrap_Value_in}}</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+
+
+<section class="container p-0 my-5">
+	<h6>OEE, Scrap & Downtime % Trend</h6>
+	<canvas class="border" baseChart 
+	[datasets]="oee_scrap_down_trend_ChartData" 
+	[labels]="oee_scrap_down_trend_ChartLabels"
+	[options]="oee_scrap_down_trend_ChartOptions"
+	[chartType]="oee_scrap_down_trend_ChartType" 
+	[legend]="ChartLegend"	 
+	[plugins]="ChartPlugins"></canvas>
+</section>
+
+
+
+<section class="container p-0 mt-5">
+	<div class="row m-0 p-0">
+		<div class="col-sm-6 m-0 p-3 mb-5">
+			<h6>OEE & Availability Trend</h6>
+			<canvas class="border" baseChart 
+			[datasets]="oee_avail_trend_ChartData" 
+			[labels]="oee_avail_trend_ChartLabels"
+			[options]="oee_avail_trend_ChartOptions"
+			[chartType]="oee_avail_trend_ChartType" 
+			[legend]="ChartLegend"	 
+			[plugins]="ChartPlugins"></canvas>
+		</div>
+		<div class="col-sm-6 m-0 p-3 mb-5">
+			<h6>Scrap Qty % Trend</h6>
+			<canvas class="border" baseChart 
+			[datasets]="scrap_qty_ChartData" 
+			[labels]="scrap_qty_ChartLabels"
+			[options]="scrap_qty_ChartOptions"
+			[chartType]="scrap_qty_ChartType" 
+			[legend]="ChartLegend"	 
+			[plugins]="ChartPlugins"></canvas>
+		</div>
+	</div>
+</section>
+
+
+
+<footer class="container-fluid bg-danger m-0 p-0">
+	<div class="container p-0">
+		<div class="row m-0 p-2">
+			<div class="col-6 m-0 p-0 d-flex justify-content-start align-items-center">
+				<a class="lead text-decoration-none text-light" href="">
+					&copy; 2022	 IRONX.
+				</a> 
+			</div>
+			<ul class="col-6 m-0 p-0 nav d-flex justify-content-end align-items-center">
+				<li class="ms-3"><a class="text-light" href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fs-6"></i></a></li>
+				<li class="ms-3"><a class="text-light" href="https://twitter.com/" target="_blank"><i class="bi bi-twitter fs-6"></i></a></li>
+				<li class="ms-3"><a class="text-light" href="https://www.google.com/" target="_blank"><i class="bi bi-google fs-6"></i></a></li>
+				<li class="ms-3"><a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-6"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+</div>
