@@ -23,10 +23,11 @@ Way to convert Webpages into PDF in **Angular**.
 
 ---
 [HTML2Canvas](https://html2canvas.hertzen.com/documentation "Docs")
+
 [jsPDF](https://github.com/parallax/jsPDF "Docs")
 
 
-### Owner : @frozen_samurai ==ME==
+##### Owner : @frozen_samurai (ME)
 
 
 [WTF.]: #
